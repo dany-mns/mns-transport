@@ -1,0 +1,61 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+/* Header (Main Title) */
+.header {
+    margin-top: 20%;
+    font-size: 36px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Contact Section */
+.contact {
+    margin: 30px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    display: inline-block;
+    max-width: 400px;
+    text-align: left;
+}
+
+.contact h2 {
+    color: #2c3e50;
+}
+
+.contact p {
+    font-size: 18px;
+}
+
+/* Image Gallery Section */
+.gallery {
+    margin-top: 40px;
+}
+
+.gallery h2 {
+    color: #2c3e50;
+}
+
+.gallery-images {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center the images horizontally */
+    margin-top: 20px;
+}
+
+.gallery-images img {
+    width: 80%;
+    max-width: 400px; /* Limit image size */
+    height: auto;
+    margin-bottom: 20px; /* Space between images */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
