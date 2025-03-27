@@ -1,61 +1,62 @@
-/* Global Styles */
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
+}
+
+/* Main Title Section */
+header.header {
     text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
 }
 
-/* Header (Main Title) */
-.header {
-    margin-top: 20%;
-    font-size: 36px;
-    font-weight: bold;
-    color: #2c3e50;
-}
-
-/* Contact Section */
-.contact {
-    margin: 30px;
+/* Contact Information Section */
+section.contact {
     padding: 20px;
-    background-color: #ecf0f1;
-    border-radius: 8px;
-    display: inline-block;
-    max-width: 400px;
-    text-align: left;
+    background-color: #fff;
+    margin: 20px;
 }
 
-.contact h2 {
-    color: #2c3e50;
+section.contact h2 {
+    margin-bottom: 10px;
 }
 
-.contact p {
-    font-size: 18px;
+section.contact p {
+    font-size: 16px;
 }
 
 /* Image Gallery Section */
-.gallery {
-    margin-top: 40px;
+section.gallery {
+    text-align: center;
+    padding: 20px;
 }
 
-.gallery h2 {
-    color: #2c3e50;
+section.gallery h2 {
+    margin-bottom: 20px;
 }
 
 .gallery-images {
-    display: flex;
-    flex-direction: column; /* Stack images vertically */
-    align-items: center; /* Center the images horizontally */
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    justify-items: center;
+    padding: 0;
+    margin: 0;
 }
 
 .gallery-images img {
-    width: 80%;
-    max-width: 400px; /* Limit image size */
+    max-width: 100%;
     height: auto;
-    margin-bottom: 20px; /* Space between images */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Optional: add rounded corners */
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .gallery-images {
+        grid-template-columns: 1fr; /* Stack images vertically on small screens */
+    }
 }
